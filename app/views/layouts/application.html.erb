@@ -7,6 +7,10 @@
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
     <%= render 'layouts/shiv' %>
+    <script src="../../assets/javascripts/jquery-3.3.1.min.js"></script>
+    <script>
+
+    </script>
   </head>
   <body>
     <%= render 'layouts/header' %>
@@ -15,5 +19,6 @@
       <%= render 'layouts/footer' %>
     </div>
   </body>
-  <%= link_to image_tag("rails-logo.svg", alt: "Rails")%>
+  
+  <%= link_to image_tag("rails-logo.svg", alt: "Rails", :class => "logo_img"), 'http://rubyonrails.org/'%>
 </html>
